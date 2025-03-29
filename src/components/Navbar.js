@@ -23,7 +23,7 @@ const Navbar = () => {
                     <div><img src={assets.pintrest} alt="pintrest" className='h-5 w-5' /></div>
                 </div>
             </div>
-            <div className='flex justify-between items-center bg-white text-center px-10 py-4 sm:px-10 sm:py-3 md:px-5 md:py-3 lg:px-10  xl:px-20 xl:py-2 xl:z-10'>
+            <div className='flex justify-between items-center bg-white text-center px-10 py-2 sm:px-10 sm:py-2 md:px-5 md:py-3   lg:px-20 lg:py-3 lg:z-10'>
                 <div className='flex text-center items-center'>
                     <img src={assets.logo} alt="" className='h-10 items-center w-auto sm:15 md:h-15' />
                 </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
                 </div>
             </div>
             {menuOpen && (
-                <div className="md:hidden bg-slate-300 shadow-md absolute top-[60px] right-0 w-auto rounded-md px-8 z-20">
+                <div className="md:hidden bg-slate-100 shadow-lg absolute top-[60px] right-0 w-auto rounded-md px-8 z-20">
                     <ul className="flex flex-col items-center gap-4 py-4">
                         <li className="text-sm cursor-pointer hover:text-blue-600">Home</li>
                         <li className="text-sm cursor-pointer hover:text-blue-600">About Us</li>
