@@ -31,16 +31,16 @@ const Categories = () => {
     ];
 
     return (
-        <div style={bannerStyle} className='relative h-full  mx-auto px-16 py-10'>
-            <div className='flex gap-2 text-center items-center py-2'>
-                <img src={assets.home} alt="" className='h-5 w-5' />
-                <span className="text-blue-600 text-lg uppercase">Trusted Real estate Care</span>
+        <div style={bannerStyle} className='relative h-full  mx-auto px-6 md:px-16 py-6 md:py-10'>
+            <div className='flex gap-2 mb-5 text-center items-center py-2'>
+                <img src={assets.home} alt="" className='h-4 w-4 md:h-5 md:w-5' />
+                <span className="text-blue-600 text-sm sm:text-sm md:text-lg uppercase">Trusted Real estate Care</span>
             </div>
-            <div className='flex flex-col md:flex-row justify-between items-start gap-10 py-2'>
-                <h2 className='text-4xl font-medium leading-tight'>Properties Categories</h2>
-                <p className='flex items-start text-left'>Our company provides a full range of services for the construction <br /> of private houses and cottages since 19</p>
+            <div className='flex flex-col md:flex-row justify-between items-start gap-10 py-1 lg:py-2'>
+                <h2 className='text-2xl sm:text-3xl md:text-4xl font-medium leading-tight'>Properties Categories</h2>
+                <p className='flex items-start leading-tight text-justify'>Our company provides a full range of services for the construction <br /> of private houses and cottages since 19</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto py-20">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto py-20">
                 {categories.map((category) => (
                     <div key={category.id} className="relative bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-lg transition">
                         <img src={category.icon} alt="" />

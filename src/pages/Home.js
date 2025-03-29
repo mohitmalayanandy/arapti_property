@@ -6,6 +6,7 @@ import Categories from '../components/Categories'
 import Trending from '../components/Trending'
 import ByLocation from '../components/ByLocation'
 import OurLands from '../components/OurLands'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Trending />
       <ByLocation />
       <OurLands />
+      <Footer />
     </div>
   )
 }

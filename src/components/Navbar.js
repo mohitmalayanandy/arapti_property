@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { assets } from '../assets/assets';
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaPinterestP } from "react-icons/fa";
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
@@ -15,12 +16,12 @@ const Navbar = () => {
                         <p>547 ns tower St. anglo City, USA</p>
                     </div>
                 </div>
-                <div className='flex items-center justify-between gap-2'>
-                    <div><img src={assets.fb} alt="fb" className='h-5 w-5' /></div>
-                    <div><img src={assets.x} alt="x" className='h-5 w-5' /></div>
-                    <div><img src={assets.instagram} alt="insta" className='h-5 w-5' /></div>
-                    <div><img src={assets.youtube} alt="youtube" className='h-5 w-5' /></div>
-                    <div><img src={assets.pintrest} alt="pintrest" className='h-5 w-5' /></div>
+                <div className='flex items-center justify-between gap-4'>
+                    <FaFacebookF className="cursor-pointer text-[#8DB8FF]" />
+                    <FaTwitter className="cursor-pointer text-[#8DB8FF]" />
+                    <FaInstagram className="cursor-pointer text-[#8DB8FF]" />
+                    <FaYoutube className="cursor-pointer text-[#8DB8FF]" />
+                    <FaPinterestP className="cursor-pointer text-[#8DB8FF]" />
                 </div>
             </div>
             <div className='flex justify-between items-center bg-white text-center px-10 py-2 sm:px-10 sm:py-2 md:px-5 md:py-3   lg:px-20 lg:py-3 lg:z-10'>
@@ -79,4 +80,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;

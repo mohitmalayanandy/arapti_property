@@ -28,6 +28,7 @@ import single_house from './images/single_house.png';
 import appertment_duplex from './images/appertment_duplex.png';
 import slider_banner from './images/slider_banner.png';
 import menu from './images/menu.png';
+import footer_logo from './images/footer_logo.png';
 
 
 import new_jursy from './images/new_jursy.png';
@@ -78,5 +79,6 @@ export const assets = {
     plot1,
     plot2,
     plot3,
-    menu
+    menu,
+    footer_logo
 }

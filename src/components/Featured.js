@@ -22,7 +22,7 @@ const Featured = () => {
                 <h2 className='text-lg sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-tight'>Dream living Spaces Setting New Build</h2>
                 <p className='text-gray-600 font-normal text-md text-justify py-5 leading-tight'>Transmds is the world’s driving worldwide coordinations supplier — we uphold industry and exchange the worldwide trade of merchandi</p>
                 <div className='flex flex-col justify-between py-4'>
-                    <div className='flex justify-normal gap-28  lg:justify-normal lg:gap-20 sm:justify-normal'>
+                    <div className='flex justify-normal gap-16 lg:justify-normal lg:gap-20 sm:justify-normal'>
                         <div className='flex items-center '>
                             <img src={assets.duplex} alt="" className='items-center h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24' />
                             <span className='text-md'>Perfect Duplex <br /> Houses</span>
