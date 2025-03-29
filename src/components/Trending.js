@@ -47,29 +47,29 @@ const properties = [
 
 const Trending = () => {
     return (
-        <div className="py-8 items-center bg-[#FFFAFA]">
-            <div className='flex gap-2 mb-2 justify-center text-center items-center py-2'>
-                <img src={assets.home} alt="" className='h-5 w-5' />
-                <span className="text-blue-600 text-lg uppercase">Trusted Real estate Care</span>
+        <div className="py-8 px-6 md:px-16 h-full bg-[#FFFAFA]">
+            <div className='flex gap-2 mb-5 justify-center text-center items-center py-2'>
+                <img src={assets.home} alt="" className='h-4 w-4 md:h-5 md:w-5' />
+                <span className="text-blue-600 text-sm sm:text-sm md:text-lg uppercase">Trusted Real estate Care</span>
             </div>
             <div className="text-center">
-                <h2 className='text-4xl font-medium leading-tight'>Trending Flat & Duplex</h2>
+                <h2 className='text-2xl sm:text-3xl md:text-4xl font-medium leading-tight'>Trending Flat & Duplex</h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 mx-24">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                 {properties.map((property) => (
                     <div key={property.id} className="bg-white shadow-md rounded-md overflow-hidden">
                         <div className='flex p-3 gap-10'>
                             <div className="relative">
-                                <img src={property.image} alt={property.title} className="w-full h-48 object-cover rounded-md" />
+                                <img src={property.image} alt={property.title} className="w-40 h-40 object-cover rounded-md" />
                                 <span className="absolute top-4 left-4 bg-slate-100 cursor-default text-black px-3 py-1 text-sm rounded-full">
                                     For sale
                                 </span>
 
                             </div>
                             <div className="relative">
-                                <h3 className="text-xl mb-2">{property.title}</h3>
+                                <h3 className="text-md sm:text-lg md:text-xl mb-2">{property.title}</h3>
                                 <p className="text-blue-500 font-semibold text-lg">{property.price}</p>
-                                <div className="flex items-center gap-4 text-gray-600 my-4">
+                                <div className="flex items-center gap-4 text-gray-600 lg:my-4">
                                     <div>
                                         <div className="flex items-center gap-2 text-xl">
                                             {property.bedrooms} <FaBed className='h-7 w-7' />

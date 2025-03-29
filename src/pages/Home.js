@@ -14,10 +14,10 @@ const Home = () => {
       <Navbar />
       <Banner />
       <Featured />
-      <Categories />
-      <Trending />
+{/*       <Categories />
+ */}      {/* <Trending />
       <ByLocation />
-      <OurLands />
+      <OurLands /> */}
       <Footer />
     </div>
   )
