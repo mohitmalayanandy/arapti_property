@@ -27,6 +27,7 @@ import luxury_home_2 from './images/luxury_home_2.png';
 import single_house from './images/single_house.png';
 import appertment_duplex from './images/appertment_duplex.png';
 import slider_banner from './images/slider_banner.png';
+import menu from './images/menu.png';
 
 
 import new_jursy from './images/new_jursy.png';
@@ -76,5 +77,6 @@ export const assets = {
     new_jursy,
     plot1,
     plot2,
-    plot3
+    plot3,
+    menu
 }
