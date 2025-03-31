@@ -57,14 +57,14 @@ const Navbar = () => {
             </div>
             {menuOpen && (
                 <div className="md:hidden bg-slate-100 shadow-lg absolute top-[60px] right-0 w-auto rounded-md px-8 z-20">
-                    <ul className="flex flex-col items-center gap-4 py-4">
+                    <ul className="flex flex-col items-start gap-4 py-4">
                         <li className="text-sm cursor-pointer hover:text-blue-600">Home</li>
                         <li className="text-sm cursor-pointer hover:text-blue-600">About Us</li>
                         <li className="text-sm cursor-pointer hover:text-blue-600">Properties</li>
                         <li className="text-sm cursor-pointer hover:text-blue-600">News & Blogs</li>
                         <li className="text-sm cursor-pointer hover:text-blue-600">Contact Us</li>
                         <li className="flex flex-col items-center gap-2">
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-2 border-gray-400 border-[1px] px-9 py-2 rounded-md hover:bg-gray-300">
                                 <img src={assets.login} alt="login_icon" className="h-5 w-5" />
                                 <p className="text-sm cursor-pointer hover:text-blue-600">Login</p>
                             </div>

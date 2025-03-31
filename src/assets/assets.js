@@ -29,6 +29,7 @@ import appertment_duplex from './images/appertment_duplex.png';
 import slider_banner from './images/slider_banner.png';
 import menu from './images/menu.png';
 import footer_logo from './images/footer_logo.png';
+import tik from './images/tik.png';
 
 
 import new_jursy from './images/new_jursy.png';
@@ -39,6 +40,17 @@ import washington from './images/washington.png';
 import plot1 from './images/plot1.png';
 import plot2 from './images/plot2.png';
 import plot3 from './images/plot3.png';
+
+import inquiry_banner from './images/inquiry_banner.png';
+import feed1 from './images/feed1.png';
+import feed2 from './images/feed2.png';
+
+import blog1 from './images/blog1.png';
+import blog2 from './images/blog2.png';
+import blog3 from './images/blog3.png';
+import blog4 from './images/blog4.png';
+
+
 
 
 
@@ -80,5 +92,13 @@ export const assets = {
     plot2,
     plot3,
     menu,
-    footer_logo
+    footer_logo,
+    inquiry_banner,
+    feed1,
+    feed2,
+    tik,
+    blog1,
+    blog2,
+    blog3,
+    blog4
 }

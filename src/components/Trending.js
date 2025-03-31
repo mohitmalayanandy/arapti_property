@@ -58,9 +58,9 @@ const Trending = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                 {properties.map((property) => (
                     <div key={property.id} className="bg-white shadow-md rounded-md overflow-hidden">
-                        <div className='flex p-3 gap-10'>
+                        <div className='flex flex-col sm:flex-row md:flex-col lg:flex-row p-3 gap-5 '>
                             <div className="relative">
-                                <img src={property.image} alt={property.title} className="w-40 h-40 object-cover rounded-md" />
+                                <img src={property.image} alt={property.title} className="w-full h-48 object-cover rounded-md" />
                                 <span className="absolute top-4 left-4 bg-slate-100 cursor-default text-black px-3 py-1 text-sm rounded-full">
                                     For sale
                                 </span>
@@ -68,35 +68,35 @@ const Trending = () => {
                             </div>
                             <div className="relative">
                                 <h3 className="text-md sm:text-lg md:text-xl mb-2">{property.title}</h3>
-                                <p className="text-blue-500 font-semibold text-lg">{property.price}</p>
-                                <div className="flex items-center gap-4 text-gray-600 lg:my-4">
+                                <p className="text-blue-500 font-semibold text-md md:text-lg">{property.price}</p>
+                                <div className="flex items-center gap-4 text-gray-600 text-sm md:text-md lg:my-4">
                                     <div>
-                                        <div className="flex items-center gap-2 text-xl">
-                                            {property.bedrooms} <FaBed className='h-7 w-7' />
+                                        <div className="flex items-center gap-2">
+                                            {property.bedrooms} <FaBed className='h-5 w-5 md:h-6 md:w-6' />
                                         </div>
-                                        <div>Bedrooms</div>
+                                        <div className='text-sm sm:text-md md:text-sm lg:text-md'>Bedrooms</div>
                                     </div>
                                     <span className="border-l border-gray-300 h-6"></span>
                                     <div>
-                                        <div className="flex items-center gap-1 text-xl">
-                                            {property.bathrooms} <FaBath className='h-7 w-7' />
+                                        <div className="flex items-center gap-1">
+                                            {property.bathrooms} <FaBath className='h-5 w-5 md:h-6 md:w-6' />
                                         </div>
-                                        <div>Bathrooms</div>
+                                        <div className='text-sm sm:text-md md:text-sm lg:text-md'>Bathrooms</div>
                                     </div>
                                     <span className="border-l border-gray-300 h-6"></span>
                                     <div>
-                                        <div className="flex items-center gap-1 text-xl">
-                                            {property.size} <FaRulerCombined className='h-7 w-7' />
+                                        <div className="flex items-center gap-1">
+                                            {property.size} <FaRulerCombined className='h-5 w-5 md:h-6 md:w-6' />
                                         </div>
-                                        <div>Sq. Ft.</div>
+                                        <div className='text-sm sm:text-md md:text-sm lg:text-md'>Sq. Ft.</div>
                                     </div>
                                 </div>
                                 <hr className="border-t border-gray-300 w-full" />
-                                <div className="flex items-center gap-1 mt-2 text-gray-500">
+                                <div className="flex items-center gap-1 mt-2 text-gray-500 text-sm">
                                     <FaMapMarkerAlt />
                                     <span>{property.location}</span>
                                 </div>
-                                <button className="absolute top-2 right-2 border-slate-50 rounded-md p-2 shadow">
+                                <button className="absolute top-2 right-2 border-slate-50 rounded-md p-1 sm:2 shadow">
                                     ❤️
                                 </button>
                             </div>
