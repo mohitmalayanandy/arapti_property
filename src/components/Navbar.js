@@ -37,7 +37,9 @@ const Navbar = () => {
                         <li className="cursor-pointer hover:text-blue-600">
                             <Link to="/about">About Us</Link>
                         </li>
-                        <li className="cursor-pointer hover:text-blue-600">Properties</li>
+                        <li className="cursor-pointer hover:text-blue-600">
+                            <Link to="/properties">Properties</Link>
+                        </li>
                         <li className="cursor-pointer hover:text-blue-600">News & Blogs</li>
                         <li className="cursor-pointer hover:text-blue-600">Contact Us</li>
                     </ul>
@@ -69,7 +71,9 @@ const Navbar = () => {
                         <li className="text-sm cursor-pointer hover:text-blue-600">
                             <Link to="/about">About Us</Link>
                         </li>
-                        <li className="text-sm cursor-pointer hover:text-blue-600">Properties</li>
+                        <li className="text-sm cursor-pointer hover:text-blue-600">
+                            <Link to="/properties">Properties</Link>
+                        </li>
                         <li className="text-sm cursor-pointer hover:text-blue-600">News & Blogs</li>
                         <li className="text-sm cursor-pointer hover:text-blue-600">Contact Us</li>
                         <li className="flex flex-col items-center gap-2">
