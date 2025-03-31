@@ -7,8 +7,7 @@ const blogPosts = [
     date: "02 Apr 2024",
     category: "Business",
     image: assets.blog1,
-    excerpt:
-      "Business is the activity of making on cing or buying and selling pro",
+    desc: "Business is the activity of making or buying and selling products.",
   },
   {
     title: "Get Best Advertiser In Your Side Pocket",
@@ -32,35 +31,55 @@ const blogPosts = [
 
 const Blogs = () => {
   return (
-    <div className="bg-gray-50 py-12 px-4 md:px-12 max-h-full">
+    <div className="bg-gray-50 py-12 px-4 sm:px-8 md:px-16 lg:px-20 ">
       <div className="text-center">
-        <h3 className="text-blue-600 uppercase text-sm font-semibold flex items-center justify-center gap-1">
-          <span>🏠</span> Trusted Real Estate Agency
-        </h3>
-        <h2 className="text-3xl font-semibold mt-2">Latest News & Blogs</h2>
+        <span className="text-blue-600 text-sm md:text-lg uppercase block mb-2">
+          Trusted Real Estate Care
+        </span>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium leading-tight">
+          Latest News & Blogs
+        </h2>
       </div>
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        <div className="md:col-span-2">
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src={blogPosts[0].image} alt="Blog Main" className="w-full h-80 object-cover" />
-            <div className="p-6">
-              <p className="text-green-600 text-sm font-semibold">{blogPosts[0].category} — {blogPosts[0].date}</p>
-              <h3 className="text-xl font-semibold mt-2">{blogPosts[0].title}</h3>
-              <p className="text-gray-600 mt-2">{blogPosts[0].excerpt}</p>
-              <a href="#" className="text-blue-600 font-semibold mt-4 inline-block">Read More →</a>
-            </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+        <div className="relative md:col-span-2">
+          <img
+            src={blogPosts[0].image}
+            alt="Blog Main"
+            className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg"
+          />
+          <div className="absolute bottom-0 left-0 bg-white p-6 shadow-lg rounded-lg w-[90%] m-4">
+            <p className="text-gray-500 text-sm font-semibold flex gap-2">
+              <img src={assets.tag} alt="Tag Icon" className="h-5 w-4" /> {blogPosts[0].category}
+              <span>—</span>
+              <img src={assets.calender} alt="Calendar Icon" className="h-5 w-4" /> {blogPosts[0].date}
+            </p>
+            <h3 className="text-lg sm:text-xl font-semibold mt-2">{blogPosts[0].title}</h3>
+            <p className="text-gray-600 mt-2 text-sm sm:text-base">{blogPosts[0].desc}</p>
+            <a href="#" className="text-blue-600 font-medium items-center text-center flex gap-2 mt-2 hover:underline">
+              Read More <img src={assets.arrow} alt="Arrow Icon" className="h-5 w-4" />
+            </a>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
+
+        <div className="flex flex-col gap-6 w-full">
           {blogPosts.slice(1).map((post, index) => (
-            <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden flex">
-              <div>
-                <img src={post.image} alt="Blog Thumbnail" className="w-1/3 object-cover" />
-              </div>
-              <div className="p-4 w-2/3">
-                <p className="text-green-600 text-sm font-semibold">{post.category} — {post.date}</p>
-                <h4 className="text-lg font-semibold">{post.title}</h4>
-                <a href="#" className="text-blue-600 font-semibold mt-2 inline-block">Read More →</a>
+            <div key={index} className="relative">
+              <img
+                src={post.image}
+                alt="Blog Thumbnail"
+                className="w-full sm:w-40 h-40 object-cover rounded-lg"
+              />
+              <div className="absolute bottom-0 right-0 bg-white p-4 shadow-lg rounded-lg w-full md:w-3/4 m-3">
+                <p className="text-gray-500 md:text-xs lg:text-sm font-semibold flex gap-2">
+                  <img src={assets.tag} alt="Tag Icon" className="h-5 w-4" /> {post.category}
+                  <span>—</span>
+                  <img src={assets.calender} alt="Calendar Icon" className="h-5 w-4" /> {post.date}
+                </p>
+                <h4 className="text-xs md:text-sm lg:text-lg font-medium">{post.title}</h4>
+                <a href="#" className="text-blue-600 font-medium items-center text-center flex gap-2 mt-2 hover:underline">
+                  Read More <img src={assets.arrow} alt="Arrow Icon" className="h-5 w-4" />
+                </a>
               </div>
             </div>
           ))}

@@ -22,7 +22,7 @@ const testimonials = [
 
 const Feedback = () => {
   return (
-    <div className="bg-gray-50 py-12 px-4 md:px-12 min-h-screen">
+    <div className="bg-gray-50 py-12 px-4 md:px-12 min-h-full">
       <div className='flex gap-2 mb-5 justify-center text-center items-center py-2'>
         <img src={assets.home} alt="" className='h-4 w-4 md:h-5 md:w-5' />
         <span className="text-blue-600 text-sm sm:text-sm md:text-lg uppercase">Trusted Real estate Care</span>

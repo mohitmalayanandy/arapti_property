@@ -30,6 +30,11 @@ import slider_banner from './images/slider_banner.png';
 import menu from './images/menu.png';
 import footer_logo from './images/footer_logo.png';
 import tik from './images/tik.png';
+import calender from './images/calender.png';
+import tag from './images/tag.png';
+import arrow from './images/arrow.png';
+import consoltant from './images/cunsultant.png';
+
 
 
 import new_jursy from './images/new_jursy.png';
@@ -50,9 +55,25 @@ import blog2 from './images/blog2.png';
 import blog3 from './images/blog3.png';
 import blog4 from './images/blog4.png';
 
+import title_banner from './images/title_banner.png';
+import dolleruser from './images/doller_user.png'
+import building_image from './images/building_image.png'
 
+import morden_building from './images/morden_building.png'
 
+import parking_space from './images/parking_space.png';
+import kids_playland from './images/kids_playland.png';
+import king_bed from './images/king_bed.png';
+import library from './images/library.png';
+import medical_center from './images/medical_center.png';
+import private_security from './images/private_security.png';
+import smart_homes from './images/smart_homes.png';
+import swimming_pool from './images/swimming_pool.png';
 
+import jasmin from './images/jasmin.png';
+import sumit from './images/sumit.png';
+import jhon from './images/jhon.png';
+import powel from './images/powel.png';
 
 
 export const assets = {
@@ -100,5 +121,26 @@ export const assets = {
     blog1,
     blog2,
     blog3,
-    blog4
+    blog4,
+    calender,
+    tag,
+    arrow,
+    consoltant,
+    title_banner,
+    dolleruser,
+    building_image,
+    morden_building,
+    parking_space,
+    kids_playland,
+    king_bed,
+    library,
+    medical_center,
+    private_security,
+    smart_homes,
+    swimming_pool,
+    jasmin,
+    sumit,
+    jhon,
+    powel
+
 }

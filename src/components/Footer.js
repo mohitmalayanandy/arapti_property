@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-gray-400 text-sm font-extralight py-10 pt-60 px-6 md:px-20">
+        <footer className="bg-gray-900 text-gray-400 text-sm font-extralight py-10 pt-60 px-6 md:px-20 relative">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-center text-center md:text-left md:items-start">
                 <div>
                     <img src={assets.footer_logo} alt="" />

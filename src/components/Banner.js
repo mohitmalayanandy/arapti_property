@@ -30,16 +30,16 @@ const Banner = () => {
                 <img src={assets.w_l_arr} alt="" />
                 <img src={assets.w_r_arr} alt="" />
             </div>
-            <div className="absolute bottom-0 right-0 bg-white py-[1px] md:py-1.5 lg:py-2 lg:px-12 rounded-full">
-                <div className="items-center px-10 py-2.5 mx-auto grid grid-cols-3 gap-6 justify-end">
+            <div className="absolute bottom-0 right-0 bg-white py-[1px] md:py-1.5 lg:py-2 lg:px-12 rounded-full mb-1 mx-4 lg:mx-10">
+                <div className="items-center px-5 lg:px-1 lg:py-1 mx-auto grid grid-cols-3 gap-10">
                     <div className='flex flex-col'>
-                        <span className="sm:text-xl lg:text-2xl font-bold">10+</span>Years of Experience
+                        <span className="sm:text-xl lg:text-2xl font-bold">10+</span><span className="text-xs lg:text-xl">Years of Experience</span>
                     </div>
                     <div className='flex flex-col'>
-                        <span className="sm:text-xl lg:text-2xl font-bold">230+</span>Happy Customer
+                        <span className="sm:text-xl lg:text-2xl font-bold">230+</span><span className="text-xs lg:text-xl">Happy Customer</span>
                     </div>
                     <div className='flex flex-col'>
-                        <span className="sm:text-xl lg:text-2xl font-bold">500+</span>Property Ready
+                        <span className="sm:text-xl lg:text-2xl font-bold">500+</span><span className="text-xs lg:text-xl">Property Ready</span>
                     </div>
                 </div>
             </div>
@@ -47,4 +47,4 @@ const Banner = () => {
     )
 }
 
-export default Banner
+export default Banner;

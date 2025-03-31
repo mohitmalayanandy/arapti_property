@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { assets } from '../assets/assets';
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaPinterestP } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
@@ -30,8 +31,12 @@ const Navbar = () => {
                 </div>
                 <div>
                     <ul className='hidden md:flex items-center justify-between text-center gap-8'>
-                        <li className="cursor-pointer hover:text-blue-600">Home</li>
-                        <li className="cursor-pointer hover:text-blue-600">About Us</li>
+                        <li className="cursor-pointer hover:text-blue-600">
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li className="cursor-pointer hover:text-blue-600">
+                            <Link to="/about">About Us</Link>
+                        </li>
                         <li className="cursor-pointer hover:text-blue-600">Properties</li>
                         <li className="cursor-pointer hover:text-blue-600">News & Blogs</li>
                         <li className="cursor-pointer hover:text-blue-600">Contact Us</li>
@@ -58,8 +63,12 @@ const Navbar = () => {
             {menuOpen && (
                 <div className="md:hidden bg-slate-100 shadow-lg absolute top-[60px] right-0 w-auto rounded-md px-8 z-20">
                     <ul className="flex flex-col items-start gap-4 py-4">
-                        <li className="text-sm cursor-pointer hover:text-blue-600">Home</li>
-                        <li className="text-sm cursor-pointer hover:text-blue-600">About Us</li>
+                        <li className="text-sm cursor-pointer hover:text-blue-600">
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li className="text-sm cursor-pointer hover:text-blue-600">
+                            <Link to="/about">About Us</Link>
+                        </li>
                         <li className="text-sm cursor-pointer hover:text-blue-600">Properties</li>
                         <li className="text-sm cursor-pointer hover:text-blue-600">News & Blogs</li>
                         <li className="text-sm cursor-pointer hover:text-blue-600">Contact Us</li>
