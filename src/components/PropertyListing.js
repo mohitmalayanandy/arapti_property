@@ -45,13 +45,15 @@ const properties = [
     },
 ];
 
+
+
 const PropertyListing = () => {
     const [activeTab, setActiveTab] = useState('Flat');
     return (
-        <div className="py-8 px-6 md:px-16 h-full bg-[#FFFAFA] mt-[50px] sm:mt-[50px] md:mt-[100px]">
-            <div className="w-full max-w-4xl mx-auto py-6">
-                {/* Tabs */}
-                <div className="flex space-x-8 mb-4">
+        <div className="lg:py-8  h-full bg-[#FFFAFA] flex flex-col gap-6 px-6 md:px-10 lg:px-16">
+            <div className="w-full max-w-4xl  py-6">
+
+                <div className="flex space-x-8 mb-2">
                     {['Flat', 'Duplex', 'Land'].map((tab) => (
                         <button key={tab} onClick={() => setActiveTab(tab)} className={`pb-2 text-lg font-medium ${activeTab === tab ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500'}`}>
                             {tab}
@@ -59,10 +61,12 @@ const PropertyListing = () => {
                     ))}
                 </div>
 
-                {/* Filters */}
-                <div className="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4">
+                <div className="hidden md:flex bg-white p-2 rounded-lg shadow-md items-center space-x-4">
                     <select className="w-full p-2 border border-gray-300 rounded-lg">
                         <option>Select Location</option>
+                        <option>Bhubaneswar</option>
+                        <option>Cuttack</option>
+                        <option>Baleswar</option>
                     </select>
 
                     <select className="w-full p-2 border border-gray-300 rounded-lg">
@@ -73,12 +77,12 @@ const PropertyListing = () => {
                         <option>Select Price Range</option>
                     </select>
 
-                    <button className="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium">
+                    <button className="bg-blue-600 text-white px-12 py-[1px] m-1 rounded-lg font-medium">
                         Browse Properties
                     </button>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                 {properties.map((property) => (
                     <div key={property.id} className="bg-white shadow-md rounded-md overflow-hidden">
                         <div className='flex flex-col sm:flex-row md:flex-col lg:flex-row p-3 gap-5 '>
@@ -90,9 +94,9 @@ const PropertyListing = () => {
 
                             </div>
                             <div className="relative">
-                                <h3 className="text-md sm:text-lg md:text-xl mb-2">{property.title}</h3>
+                                <h3 className="text-md sm:text-lg md:text-lg mb-2">{property.title}</h3>
                                 <p className="text-blue-500 font-semibold text-md md:text-lg">{property.price}</p>
-                                <div className="flex items-center gap-4 text-gray-600 text-sm md:text-md lg:my-4">
+                                <div className="flex items-center gap-2 sm:gap-4 text-gray-600 text-sm md:text-md lg:my-4">
                                     <div>
                                         <div className="flex items-center gap-2">
                                             {property.bedrooms} <FaBed className='h-5 w-5 md:h-6 md:w-6' />
@@ -119,7 +123,7 @@ const PropertyListing = () => {
                                     <FaMapMarkerAlt />
                                     <span>{property.location}</span>
                                 </div>
-                                <button className="absolute top-2 right-2 border-slate-50 rounded-md p-1 sm:2 shadow">
+                                <button className="absolute top-2 right-2 lg: border-slate-50 rounded-md p-1 sm:2 shadow">
                                     ❤️
                                 </button>
                             </div>
@@ -127,6 +131,7 @@ const PropertyListing = () => {
                     </div>
                 ))}
             </div>
+            
         </div>
     );
 };

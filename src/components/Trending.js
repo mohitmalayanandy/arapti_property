@@ -69,7 +69,7 @@ const Trending = () => {
                             <div className="relative">
                                 <h3 className="text-md sm:text-lg md:text-xl mb-2">{property.title}</h3>
                                 <p className="text-blue-500 font-semibold text-md md:text-lg">{property.price}</p>
-                                <div className="flex items-center gap-4 text-gray-600 text-sm md:text-md lg:my-4">
+                                <div className="flex items-center gap-2 sm:gap-4 text-gray-600 text-sm md:text-md lg:my-4">
                                     <div>
                                         <div className="flex items-center gap-2">
                                             {property.bedrooms} <FaBed className='h-5 w-5 md:h-6 md:w-6' />

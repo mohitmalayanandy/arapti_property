@@ -21,7 +21,7 @@ const benefits = [
 const Benefits = () => {
   return (
     <section className="bg-[#FFFAFA] py-16 text-center px-6">
-      <h2 className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-semibold px-3 text-gray-900">
+      <h2 className="text-2xl sm:text-2xl md:text-4xl font-semibold px-3 text-gray-900">
         What Benefits Do You Get From Us
       </h2>
       <p className="text-gray-600 text-sm mt-3 max-w-2xl mx-auto">
@@ -48,7 +48,7 @@ const Benefits = () => {
         <div className="md:w-1/2">
           <img src={assets.building_image} alt="" className="md:max-h-full md:max-w-full"/>
         </div>
-        <div className="flex flex-col md:w-1/2 mt-5 md:mt-16 md:gap-2 lg:mt-20 xl:mt-28  gap-10">
+        <div className="flex flex-col md:w-1/2 mt-5 md:mt-16 md:gap-2 lg:mt-20 xl:mt-28  gap-10 lg:gap-8">
           <div className="text-justify bg-[#F8F7FC] md:px-5 md:py-3 md:text-sm lg:text-base lg:px-10 lg:py-8 md:mt-[2px] p-3 lg:w-4/5 lg:h-60 rounded-lg">
             <h3 className="text-xl font-semibold mb-5">Who we are</h3>
             <p className="text-justify">

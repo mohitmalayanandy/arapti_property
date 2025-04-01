@@ -25,12 +25,12 @@ const Navbar = () => {
                     <FaPinterestP className="cursor-pointer text-[#8DB8FF]" />
                 </div>
             </div>
-            <div className='flex justify-between items-center bg-white text-center px-10 py-2 sm:px-10 sm:py-2 md:px-5 md:py-3   lg:px-20 lg:py-3 lg:z-10'>
+            <div className='flex justify-between items-center bg-white text-center px-4 py-2 sm:px-10 sm:py-2 md:px-4 md:py-3   lg:px-20 lg:py-3 lg:z-10'>
                 <div className='flex text-center items-center'>
                     <img src={assets.logo} alt="" className='h-10 items-center w-auto sm:15 md:h-15' />
                 </div>
                 <div>
-                    <ul className='hidden md:flex items-center justify-between text-center gap-8'>
+                    <ul className='hidden md:flex items-center justify-between text-center gap-8 md:gap-4'>
                         <li className="cursor-pointer hover:text-blue-600">
                             <Link to="/">Home</Link>
                         </li>
@@ -49,7 +49,7 @@ const Navbar = () => {
                         <img src={assets.login} alt="login_icon" className='h-5 w-5' />
                         <p>Login</p>
                     </div>
-                    <div className='hidden lg:flex items-center text-center'>
+                    <div className='hidden xl:flex items-center text-center'>
                         <button className='flex items-center text-center bg-blue-600 text-white md:px-5 md:py-2 lg:px-5 lg:py-2 rounded-md gap-2'>
                             Add Listing
                             <img src={assets.filled_add} alt="" className='h-5 w-5' />
@@ -63,7 +63,7 @@ const Navbar = () => {
                 </div>
             </div>
             {menuOpen && (
-                <div className="md:hidden bg-slate-100 shadow-lg absolute top-[60px] right-0 w-auto rounded-md px-8 z-20">
+                <div className="lg:hidden bg-slate-100 shadow-lg absolute top-[60px] right-0 w-auto rounded-md px-8 z-20">
                     <ul className="flex flex-col items-start gap-4 py-4">
                         <li className="text-sm cursor-pointer hover:text-blue-600">
                             <Link to="/">Home</Link>

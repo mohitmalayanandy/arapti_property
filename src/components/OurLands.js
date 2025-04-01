@@ -69,16 +69,9 @@ const OurLands = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {lands.map((land) => (
-            <div
-              key={land.id}
-              className="bg-white shadow-md rounded-xl overflow-hidden"
-            >
+            <div key={land.id} className="bg-white shadow-md rounded-xl overflow-hidden">
               <div className="relative">
-                <img
-                  src={land.image}
-                  alt={`Plot No - ${land.plotNo}`}
-                  className="w-full h-48 object-cover"
-                />
+                <img src={land.image} alt={`Plot No - ${land.plotNo}`} className="w-full h-48 object-cover"/>
                 {land.featured && (
                   <span className="absolute top-2 left-2 bg-blue-500 text-white text-xs font-semibold px-2 py-1 rounded-md">
                     Featured
