@@ -2,23 +2,23 @@ import React from 'react'
 import { assets } from '../assets/assets';
 const Inquiry = () => {
     return (
-        <div className="py-8 px-6 md:px-16 h-full bg-[#FFFAFA]">
-            <div className='flex gap-2 mb-5 justify-center text-center items-center py-2'>
+        <div className="py-6 px-6 md:px-16 h-full bg-[#FFFAFA]">
+            <div className='flex gap-2 mb-5 justify-center text-center items-center md:py-2'>
                 <img src={assets.home} alt="" className='h-4 w-4 md:h-5 md:w-5' />
                 <span className="text-blue-600 text-sm sm:text-sm md:text-lg uppercase">Trusted Real estate Care</span>
             </div>
             <div className="text-center">
                 <h2 className='text-2xl sm:text-3xl md:text-4xl font-medium leading-tight'>Trending Flat & Duplex</h2>
             </div>
-            <div className='flex flex-col md:flex-row gap-10 w-full mt-5'>
+            <div className='flex flex-col md:flex-row gap-10 w-full md:mt-5'>
                 <div className="space-y-6 md:w-1/2">
-                    <div className="mt-6 text-gray-700 text-justify  text-sm md:text-base lg:text-lg">
+                    <div className="mt-4 md:mt-6 text-gray-700 text-justify  text-sm md:text-base lg:text-lg">
                         <p>Browse our property listing and find your best With over 1 million+ homes for sale available on the website you with a house you will want to call home.</p>
                     </div>
                     <div className="text-gray-600 items-center space-y-2">
-                        <p className='flex items-center text-sm sm:text-base md:text-lg'><img src={assets.tik} alt="" className='h-3 w-3' /> Living rooms are pre-wired for Surround</p>
-                        <p className='flex items-center text-sm sm:text-base md:text-lg'><img src={assets.tik} alt="" className='h-3 w-3' /> Luxurious interior design and amenities</p>
-                        <p className='flex items-center text-sm sm:text-base md:text-lg'><img src={assets.tik} alt="" className='h-3 w-3' /> Nestled in the Buckhead</p>
+                        <p className='flex text-sm sm:text-base md:text-lg'><img src={assets.tik} alt="" className='h-3 w-3' />&nbsp; Living rooms are pre-wired for Surround</p>
+                        <p className='flex text-sm sm:text-base md:text-lg'><img src={assets.tik} alt="" className='h-3 w-3' />&nbsp; Luxurious interior design and amenities</p>
+                        <p className='flex text-sm sm:text-base md:text-lg'><img src={assets.tik} alt="" className='h-3 w-3' />&nbsp; Nestled in the Buckhead</p>
                     </div>
                     <div className="flex justify-center">
                         <img src={assets.inquiry_banner} alt="" className="w-full max-w-2xl" />

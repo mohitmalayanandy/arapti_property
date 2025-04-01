@@ -22,15 +22,15 @@ const testimonials = [
 
 const Feedback = () => {
   return (
-    <div className="bg-gray-50 py-12 px-4 md:px-12 min-h-full">
-      <div className='flex gap-2 mb-5 justify-center text-center items-center py-2'>
+    <div className="bg-gray-50 md:py-12 px-6 py-6 md:px-12 min-h-full">
+      <div className='flex gap-2 mb-5 justify-center text-center items-center md:py-2'>
         <img src={assets.home} alt="" className='h-4 w-4 md:h-5 md:w-5' />
         <span className="text-blue-600 text-sm sm:text-sm md:text-lg uppercase">Trusted Real estate Care</span>
       </div>
       <div className="text-center">
         <h2 className='text-2xl sm:text-3xl md:text-4xl font-medium leading-tight'>Find Client’s Feedback</h2>
       </div>
-      <div className="relative flex items-center justify-center mt-8">
+      <div className="relative flex items-center justify-center mt-6 md:mt-8">
         <button className="absolute hidden md:flex left-0 bg-white shadow-md p-2 rounded-full hover:bg-gray-100">
           <MdKeyboardArrowLeft size={20} />
         </button>

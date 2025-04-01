@@ -7,7 +7,7 @@ const Banner = () => {
         backgroundImage: `url(${assets.banner})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        height: '100vh',
+        /* height: '82vh', */
         width: '100%',
     };
     const bannerTitel = {
@@ -18,7 +18,7 @@ const Banner = () => {
         marginTop: '20px' */
     }
     return (
-        <div style={bannerStyle} className='relative mt-[50px] sm:mt-[50px] md:mt-[100px] h-full'>
+        <div style={bannerStyle} className='relative mt-[50px] sm:mt-[50px] md:mt-[100px] h-[93vh] md:h-[91vh] lg:h-[82vh]'>
             <div className='justify-center items-center text-center'>
                 <button className='text-white text-xs border-[1px] px-5 py-2.5 rounded-full mt-10'>
                     LET US GUIDE YOUR HOME
@@ -30,7 +30,7 @@ const Banner = () => {
                 <img src={assets.w_l_arr} alt="" />
                 <img src={assets.w_r_arr} alt="" />
             </div>
-            <div className="absolute bottom-0 right-0 bg-white py-[1px] md:py-1.5 lg:py-2 lg:px-12 rounded-full mb-1 mx-4 lg:mx-10">
+            <div className="absolute bottom-0 right-0 bg-white py-[1px] md:py-1.5 lg:py-2 lg:px-12 rounded-full mb-3 mx-4 lg:mx-10">
                 <div className="items-center px-5 lg:px-1 lg:py-1 mx-auto grid grid-cols-3 gap-10">
                     <div className='flex flex-col'>
                         <span className="sm:text-xl lg:text-2xl font-bold">10+</span><span className="text-xs lg:text-xl">Years of Experience</span>

@@ -47,18 +47,18 @@ const properties = [
 
 const Trending = () => {
     return (
-        <div className="py-8 px-6 md:px-16 h-full bg-[#FFFAFA]">
-            <div className='flex gap-2 mb-5 justify-center text-center items-center py-2'>
+        <div className="py-6 px-6 md:px-16 h-full bg-[#FFFAFA]">
+            <div className='flex gap-2 mb-5 justify-center text-center items-center md:py-2'>
                 <img src={assets.home} alt="" className='h-4 w-4 md:h-5 md:w-5' />
                 <span className="text-blue-600 text-sm sm:text-sm md:text-lg uppercase">Trusted Real estate Care</span>
             </div>
             <div className="text-center">
                 <h2 className='text-2xl sm:text-3xl md:text-4xl font-medium leading-tight'>Trending Flat & Duplex</h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-8">
                 {properties.map((property) => (
                     <div key={property.id} className="bg-white shadow-md rounded-md overflow-hidden">
-                        <div className='flex flex-col sm:flex-row md:flex-col lg:flex-row p-3 gap-5 '>
+                        <div className='flex flex-col sm:flex-row md:flex-col lg:flex-row p-3 gap-6 '>
                             <div className="relative">
                                 <img src={property.image} alt={property.title} className="w-full h-48 object-cover rounded-md" />
                                 <span className="absolute top-4 left-4 bg-slate-100 cursor-default text-black px-3 py-1 text-sm rounded-full">

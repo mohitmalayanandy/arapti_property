@@ -56,13 +56,13 @@ const OurLands = () => {
   return (
     <div className="px-6 py-6 md:px-16 md:py-10 bg-gradient-to-t from-[#F0EFFB] to-[#FFFFFF]">
       <div className="container mx-auto">
-        <div className='flex gap-2 mb-5 text-center items-center py-2'>
+        <div className='flex gap-2 mb-5 text-center items-center md:py-2'>
           <img src={assets.home} alt="" className='h-4 w-4 md:h-4 md:w-4' />
           <span className="text-blue-600 text-sm sm:text-sm md:text-md uppercase">Trusted Real estate Care</span>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center mb-6">
           <h2 className="text-lg md:text-3xl font-semibold">Check Out Our Lands</h2>
-          <button className="bg-blue-600 text-white px-3 py-[4px] md:px-5 md:py-2 rounded-lg mt-3 hover:bg-blue-700 transition">
+          <button className="bg-blue-600 text-white px-3 py-[4px] md:px-5 md:py-2 rounded-lg mt-5 hover:bg-blue-700 transition">
             View More →
           </button>
         </div>

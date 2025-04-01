@@ -41,7 +41,9 @@ const Navbar = () => {
                             <Link to="/properties">Properties</Link>
                         </li>
                         <li className="cursor-pointer hover:text-blue-600">News & Blogs</li>
-                        <li className="cursor-pointer hover:text-blue-600">Contact Us</li>
+                        <li className="cursor-pointer hover:text-blue-600">
+                            <Link to="/contact">Contact Us</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className='flex items-center text-center gap-4'>
