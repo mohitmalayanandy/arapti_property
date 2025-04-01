@@ -33,12 +33,12 @@ const Categories = () => {
 
     return (
         <div style={bannerStyle} className="relative overflow-visible mx-auto px-6 md:px-16 py-6 md:py-10">
-            <div className="flex gap-2 mb-5 text-center items-center py-2">
+            <div className="flex gap-2 mb-5 text-center items-center md:py-2">
                 <img src={assets.home} alt="Home Icon" className="h-4 w-4 md:h-5 md:w-5" />
                 <span className="text-blue-600 text-sm sm:text-sm md:text-lg uppercase">Trusted Real Estate Care</span>
             </div>
-            <div className="flex flex-col md:flex-row justify-between items-start gap-10 py-1 lg:py-2">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium leading-tight">
+            <div className="flex flex-col md:flex-row justify-between items-start gap-3 md:gap-10 lg:py-2">
+                <h2 className='text-lg sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-tight'>
                     Properties Categories
                 </h2>
                 <p className="flex items-start leading-tight text-justify">
