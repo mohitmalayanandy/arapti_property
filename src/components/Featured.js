@@ -25,32 +25,34 @@ const Featured = () => {
                     <div className='flex py-2 lg:py-4 justify-between gap-10'>
                         <div className='flex-col sm:flex md:flex-col lg:flex-row items-center justify-evenly'>
                             <img src={assets.duplex} alt="" className='items-center h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24' />
-                            <span className='text-sm md:text-md lg:text-lg font-semibold '>Perfect Duplex Houses</span>
+                            <span className='text-sm md:text-base lg:text-sm font-semibold '>Perfect Duplex Houses</span>
                         </div>
                         <div className='flex-col sm:flex md:flex-col lg:flex-row items-center '>
-                            <img src={assets.friendly} alt="" className='items-center h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24'/>
-                            <span className='text-sm md:text-md lg:text-lg font-semibold '>Friendly Support Team</span>
+                            <img src={assets.friendly} alt="" className='items-center h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24' />
+                            <span className='text-sm md:text-base lg:text-sm font-semibold '>Friendly Support Team</span>
                         </div>
                     </div>
                     <div className='flex py-2 lg:py-4 justify-between gap-10'>
                         <div className='flex flex-col items-start '>
-                            <h3 className='text-xl'>Construction</h3>
-                            <p className='text-gray-600 py-4 text-justify leading-tight'>Curabitur vel auctor nibh. Curabitur
+                            <h3 className='text-base lg:text-xl'>Construction</h3>
+                            <p className='text-gray-600 py-2 text-justify leading-tight'>Curabitur vel auctor nibh. Curabitur
                                 egestas posuere mi, sed pulvinar ligula.
                             </p>
                         </div>
                         <div className='flex flex-col items-start '>
-                            <h3 className='text-xl'>Architecture</h3>
-                            <p className='text-gray-600 py-4 text-justify leading-tight'>Curabitur vel auctor nibh. Curabitur
+                            <h3 className='text-base lg:text-xl'>Architecture</h3>
+                            <p className='text-gray-600 py-2 text-justify leading-tight'>Curabitur vel auctor nibh. Curabitur
                                 egestas posuere mi, sed pulvinar ligula.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div className="mt-[2px] flex items-center gap-6">
-                    <button className="bg-blue-600 text-white px-4 py-2.5 sm:px-6 sm:py-3 rounded-lg shadow-md hover:bg-blue-700 transition">More About Us</button>
+                <div className="my-[4px] flex items-center gap-6">
+                    <button className="bg-blue-600 text-white px-4 py-2.5 sm:px-6 sm:py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
+                        More About Us
+                    </button>
                     <button className='border-white'>
-                        <img src={assets.play_button} alt="" className='h-16  w-16'/>
+                        <img src={assets.play_button} alt="" className='h-16  w-16' />
                     </button>
                 </div>
             </div>
