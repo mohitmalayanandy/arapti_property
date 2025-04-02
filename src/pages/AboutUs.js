@@ -8,7 +8,7 @@ import TeamMembers from '../components/TeamMembers'
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className=''>
       <TitleBanner />
       <Benefits />
       <ModernBanner />

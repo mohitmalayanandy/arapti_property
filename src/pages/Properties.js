@@ -5,7 +5,7 @@ import PropertyLands from '../components/PropertyLands'
 
 const Properties = () => {
   return (
-    <div className=''>
+    <div className='mb-16'>
       <PropertyBanner />
       <PropertyListing />
       <PropertyLands />

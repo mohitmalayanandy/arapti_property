@@ -12,7 +12,6 @@ import w_l_arr from './images/w_l_arr.png';
 import b_r_arr from './images/b_r_arr.png';
 import b_l_arr from './images/b_l_arr.png';
 import logo from './images/logo.png';
-import banner from './images/banner.jpeg'
 import featured_house from './images/featured_house.png';
 import home from './images/home.png';
 import duplex from './images/duplex.png';
@@ -75,10 +74,32 @@ import sumit from './images/sumit.png';
 import jhon from './images/jhon.png';
 import powel from './images/powel.png';
 
+import mail_add from './images/mail_add.png';
+import phone from './images/phone.png';
+import address from './images/address.png';
+import map from './images/map.jpg';
+
+
+import banner from './images/banner.jpeg'
+import banner2 from './images/banner2.jpg'
+import banner3 from './images/banner3.jpg'
+import banner4 from './images/banner4.jpg'
+import banner5 from './images/banner5.jpg'
+import banner6 from './images/banner6.jpg'
+import banner7 from './images/banner7.jpg'
+import banner8 from './images/banner8.jpg'
+import banner9 from './images/banner9.jpg'
+import banner10 from './images/banner10.jpg'
+
+
 
 export const assets = {
     mail,
+    mail_add,
+    map,
     location,
+    address,
+    phone,
     fb,
     x,
     instagram,
@@ -91,7 +112,6 @@ export const assets = {
     b_r_arr,
     b_l_arr,
     logo,
-    banner,
     featured_house,
     home,
     duplex,
@@ -144,3 +164,37 @@ export const assets = {
     powel
 
 }
+
+
+export const bgImage = [
+    {
+        img: banner
+    },
+    {
+        img: banner2
+    },
+    {
+        img: banner3
+    },
+    {
+        img: banner4
+    },
+    {
+        img: banner5
+    },
+    {
+        img: banner6
+    },
+    {
+        img: banner7
+    },
+    {
+        img: banner8
+    },
+    {
+        img: banner9
+    },
+    {
+        img: banner10
+    }
+]

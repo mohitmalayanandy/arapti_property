@@ -77,7 +77,9 @@ const Navbar = () => {
                             <Link to="/properties">Properties</Link>
                         </li>
                         <li className="text-sm cursor-pointer hover:text-blue-600">News & Blogs</li>
-                        <li className="text-sm cursor-pointer hover:text-blue-600">Contact Us</li>
+                        <li className="text-sm cursor-pointer hover:text-blue-600">
+                            <Link to="/contact">Contact Us</Link>
+                        </li>
                         <li className="flex flex-col items-center gap-2">
                             <div className="flex items-center gap-2 border-gray-400 border-[1px] px-9 py-2 rounded-md hover:bg-gray-300">
                                 <img src={assets.login} alt="login_icon" className="h-5 w-5" />

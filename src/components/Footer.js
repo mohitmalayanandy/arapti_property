@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-gray-400 text-sm font-extralight py-10 pt-20 sm:pt-40 md:pt-44 lg:pt-52 px-6 md:px-20 mt-20 sm:mt-40 md:mt-44 lg:mt-52 xl:mt-64 relative">
+        <footer className="bg-gray-900 text-gray-400 text-sm font-extralight py-10 pt-20 sm:pt-40 md:pt-44 lg:pt-52 px-6 md:px-20 mt-6 sm:mt-40 md:mt-44 lg:mt-52 xl:mt-64 relative">
             <img src={assets.consoltant} alt="" className='absolute -top-16 left-0 p-2 sm:-top-32 lg:-top-48 lg:p-6  xl:-top-56 xl:left-2'/>
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-center text-center md:text-left md:items-start">
                 <div>
